@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context="com.example.automaticemailsend.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello_world" />
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="80dp"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/et_sendto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/et_sendto"
+        android:layout_alignTop="@+id/send_email"
+        android:layout_marginTop="18dp"
+        android:text="select" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@+id/send_email"
+        android:text="TextView" />
+
+</RelativeLayout>
